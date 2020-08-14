@@ -41,10 +41,10 @@ const findAndDelete = function(id) {
   // this.items.splice(index, 1);
 };
 
-// const deleteListItem = function (id) {
-  // const index = store.items.findIndex(item => item.id === id);
-  // store.items.splice(index, 1);
-// };
+function toggleCheckedFilter(){
+  this.hideCheckedItems = !this.hideCheckedItems;
+}
+  
 
 
 
@@ -59,6 +59,7 @@ export default {
   findAndToggleChecked,
   findAndUpdateName,
   findAndDelete,
+  toggleCheckedFilter
 };
 
 // console.log(item);
